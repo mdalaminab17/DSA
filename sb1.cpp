@@ -19,10 +19,14 @@ int binary(int data[], int n, int item){
 }
 
 int main(){
-    int data[] = {101, 123, 145, 167, 189, 200, 222, 250, 275, 300};
-    int s = 10;
-    int item = 189;
-    
+    int s;
+    int item;
+    cin>>s;
+    int data[s];
+    for(int i=0; i<s; i++){
+        cin>>data[i];
+    }
+    cin>>item;
     int found = binary(data,s,item);
     
     if(found >= 0){
